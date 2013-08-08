@@ -30,25 +30,12 @@
           <xsl:value-of select="title"/>
         </td>
       </tr>
-      <tr>
-        <td bgcolor="#FFDC75" valign="top" align="left">Author</td>
-        <td>
-            <xsl:value-of select="authorsurname"/>, <xsl:value-of select="authorname"/> 
-        </td>
-      </tr>
+      
       <tr>
         <td bgcolor="#FFDC75" valign="top" align="left">Price</td>
         <td>
             <xsl:value-of select="price"/>
         </td>
-      </tr>
-      <tr>
-        <td bgcolor="#FFDC75" valign="top" align="left">Pages</td>
-        <td><xsl:value-of select="pages" /></td>
-      </tr>
-      <tr>
-        <td bgcolor="#FFDC75" valign="top" align="left">Description</td>
-        <td><xsl:value-of select="description" /></td>
       </tr>
    </table>
   <xsl:element name="a"> <!-- A link in XSLT -->
