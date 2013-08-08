@@ -16,7 +16,7 @@ public class ShopServlet extends HttpServlet {
     private static String showPage=null;
     private static String checkoutPage = null;
     private static String thankyouPage = null;
-    private static String beyPage = null;
+    private static String byePage = null;
     private static String profilePage = null;
     private static String userPage = null;
     private static String jdbcURL = null;
