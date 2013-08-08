@@ -17,9 +17,6 @@
   <table border="0">
     <tr bgcolor="silver" cellspacing="0">
     <td>
-        <strong>Book</strong>
-    </td>
-    <td>
         <strong>Author</strong>
     </td>
     <td>
