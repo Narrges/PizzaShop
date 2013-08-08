@@ -6,19 +6,15 @@ package beans;
 
 /**
  *
- * @author  Fredrik Ålund, Olle Eriksson
+ * @author  Fredrik ï¿½lund, Olle Eriksson
  */
 public class BookBean {
 
     // describe a book
     
-    private int id;
-    private String title;
-    private int price;
-    private String authorName;
-    private String authorSurname;
-    private int pages;
-    private String description;
+    private int ingID;
+    private String ingName;
+    private int ingPrice;
     
     
     /** Creates a new instance of BookBean */
@@ -26,61 +22,30 @@ public class BookBean {
     }
     
     public int getPrice() {
-        return price;
+        return ingPrice;
     }
     
     public void setPrice(int _price) {
-        price = _price;
+        ingPrice = _price;
     }
     
     public String getTitle() {
-        return title;
+        return ingName;
     }
     
     public void setTitle(String _title) {
-        title=_title;
+        ingName=_title;
     }
 
-    public String getAuthorName() {
-        return authorName;
-    }
-    
-    public void setAuthorName(String _authorName) {
-        authorName=_authorName;
-    }
-
-    public String getAuthorSurname() {
-        return authorSurname;
-    }
-    
-    public void setAuthorSurname(String _authorSurname) {
-        authorSurname=_authorSurname;
-    }
-    
-    public int getId() {
-        return id;
+       public int getId() {
+        return ingID;
     }
     
     public void setId( int _id) {
-        id= _id;
+        ingID= _id;
         
     }
-    public int getPages() {
-        return pages;
-    }
-    
-    public void setPages( int _pages) {
-        pages = _pages;
-    }
-
-    public void setDescription(String _description) {
-        description=_description;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
+   
     // create an XML document describing the book
     
     public String getXml() {
@@ -92,26 +57,14 @@ public class BookBean {
       
       xmlOut.append("<book>");
       xmlOut.append("<id>");
-      xmlOut.append(id);
+      xmlOut.append(ingID);
       xmlOut.append("</id>");      
       xmlOut.append("<title><![CDATA[");
-      xmlOut.append(title);
+      xmlOut.append(ingName);
       xmlOut.append("]]></title>");
-      xmlOut.append("<authorname><![CDATA[");
-      xmlOut.append(authorName);
-      xmlOut.append("]]></authorname>");
-      xmlOut.append("<authorsurname><![CDATA[");
-      xmlOut.append(authorSurname);
-      xmlOut.append("]]></authorsurname>");
       xmlOut.append("<price>");
-      xmlOut.append(price);      
+      xmlOut.append(ingPrice);      
       xmlOut.append("</price>");
-      xmlOut.append("<pages>");
-      xmlOut.append(pages);
-      xmlOut.append("</pages>");
-      xmlOut.append("<description><![CDATA[");
-      xmlOut.append(description);      
-      xmlOut.append("]]></description>");   
       xmlOut.append("</book>");
       
       return xmlOut.toString();

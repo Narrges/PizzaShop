@@ -21,7 +21,7 @@ public class BookListBean {
 
     public BookListBean() throws Exception{
       this(
-          "jdbc:mysql://localhost/olle?user=root&password=admin");
+          "jdbc:mysql://localhost/ECPDataBase?user=root&password=admin");
     }
     
     /** Creates a new instance of BookListBean */
@@ -43,10 +43,8 @@ public class BookListBean {
 	    // each book is a BookBean object
 
             stmt = conn.createStatement();
-            String sql="SELECT BOOK_ID, TITLE, NAME AS AUTHOR_NAME, ";
-	    sql += "SURNAME AS AUTHOR_SURNAME, ";
-            sql += "PRICE, PAGES, DESCRIPTION FROM BOOKS,";
-	    sql += "AUTHORS WHERE BOOKS.AUTHOR_ID=AUTHORS.AUTHOR_ID";
+            String sql="SELECT ingID, ingName, ingPrice FROM Ingredient";
+	   
             rs= stmt.executeQuery(sql);
             
 	    // analyze the result set
@@ -55,13 +53,9 @@ public class BookListBean {
                 
                 BookBean bb = new BookBean();
                 
-                bb.setId(rs.getInt("BOOK_ID"));
-                bb.setTitle(rs.getString("TITLE"));
-                bb.setAuthorName(rs.getString("AUTHOR_NAME"));
-                bb.setAuthorSurname(rs.getString("AUTHOR_SURNAME"));
-                bb.setPrice(rs.getInt("PRICE"));
-                bb.setPages(rs.getInt("PAGES"));
-                bb.setDescription(rs.getString("DESCRIPTION"));
+                bb.setId(rs.getInt("ingID"));
+                bb.setTitle(rs.getString("ingName"));
+                bb.setPrice(rs.getInt("ingPrice"));
                 bookList.add(bb);
                 
             }
