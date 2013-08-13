@@ -1,1 +1,12 @@
+<<<<<<< HEAD
 /dist/
+=======
+*.class
+*.properties
+
+# Package Files #
+*.jar
+*.war
+*.ear
+/build/
+>>>>>>> d5354512cdcfda98f5450124c1a62b7466743029

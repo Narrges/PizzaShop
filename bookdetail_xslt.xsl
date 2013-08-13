@@ -30,18 +30,23 @@
           <xsl:value-of select="title"/>
         </td>
       </tr>
+<<<<<<< HEAD
       <tr>
         <td bgcolor="#FFDC75" valign="top" align="left">Author</td>
         <td>
             <xsl:value-of select="authorsurname"/>, <xsl:value-of select="authorname"/> 
         </td>
       </tr>
+=======
+      
+>>>>>>> d5354512cdcfda98f5450124c1a62b7466743029
       <tr>
         <td bgcolor="#FFDC75" valign="top" align="left">Price</td>
         <td>
             <xsl:value-of select="price"/>
         </td>
       </tr>
+<<<<<<< HEAD
       <tr>
         <td bgcolor="#FFDC75" valign="top" align="left">Pages</td>
         <td><xsl:value-of select="pages" /></td>
@@ -50,6 +55,8 @@
         <td bgcolor="#FFDC75" valign="top" align="left">Description</td>
         <td><xsl:value-of select="description" /></td>
       </tr>
+=======
+>>>>>>> d5354512cdcfda98f5450124c1a62b7466743029
    </table>
   <xsl:element name="a"> <!-- A link in XSLT -->
     <xsl:attribute name="href"><xsl:text>shop</xsl:text></xsl:attribute>
@@ -62,4 +69,8 @@
   </xsl:element>
   </xsl:template>
 
+<<<<<<< HEAD
 </xsl:stylesheet>
+=======
+</xsl:stylesheet>
+>>>>>>> d5354512cdcfda98f5450124c1a62b7466743029
